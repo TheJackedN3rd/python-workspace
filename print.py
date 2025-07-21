@@ -1,0 +1,5 @@
+print("hello world")
+print("Bangladesh", "is", "my", "country")
+print("Safty",5, "is", "my", "goal")
+print("I", "love", "Python",sep = '-')
+print("I", "love", "Python", end = ' ')
