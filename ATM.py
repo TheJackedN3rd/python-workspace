@@ -17,7 +17,7 @@
 #len(L) this is a function.string,list anyone can use this
 #L.append() this is a method inside list class.only object of a list class can use this
 
-class Atm:
+class ATM:
     def __init__(self): #This is the constructor method.It runs automatically every time you create a new Atm object.
         self.pin = ""
         self.balance = 0

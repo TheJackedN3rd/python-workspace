@@ -1,3 +1,3 @@
-from myClass import Atm
-s1 = Atm()
+from ATM import ATM
+s1 = ATM()
 s1.menu()
