@@ -22,10 +22,11 @@ class Atm:
         self.pin = ""
         self.balance = 0
         
-        self.menu()
+        #self.menu()
         
     def menu(self):
-        user_input = input("""
+        while True:
+            user_input = input("""
                            Hello how would you like to proceed?
                            1. Enter 1 to create pin
                            2. Enter 2 to deposit
@@ -34,18 +35,18 @@ class Atm:
                            5. Enter 5 to exit
                            """)
         
-        if user_input == "1":
-            self.create_pin()
-        elif user_input == "2":
-            self.deposite()
-        elif user_input == "3":
-            self.withdraw()
-        elif user_input == "4":
-            self.check_balance()
-        elif user_input == "5":
-            print("Exit")
-        else:
-            print("Bye")
+            if user_input == "1":
+                self.create_pin()
+            elif user_input == "2":
+                self.deposite()
+            elif user_input == "3":
+                self.withdraw()
+            elif user_input == "4":
+                self.check_balance()
+            elif user_input == "5":
+                print("Exit")
+            else:
+                print("Bye")
             
     def create_pin(self):
         self.pin = input("Enter your pin")
